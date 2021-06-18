@@ -63,7 +63,7 @@ Scientific journal
 
 #### Get books grouped by quantity
 <pre>
-GET <a href="https://rbooksapijava.azurewebsites.net/books" target="_blank">https://rbooksapijava.azurewebsites.net/books</a>
+GET <a href="https://booksapijava.azurewebsites.net/books" target="_blank">https://booksapijava.azurewebsites.net/books</a>
 </pre>
 
 ```json
