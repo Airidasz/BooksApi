@@ -13,7 +13,7 @@ public class HomeResource {
 	
     @GET
     public Response index() {  
-    	String indexFileLocation = context.getRealPath("/") +"\\index.jsp";
+    	String indexFileLocation = context.getRealPath("/") +"\\index.html";
     	File indexFile = new File(indexFileLocation);
     	return Response.ok(indexFile).build();
     }
