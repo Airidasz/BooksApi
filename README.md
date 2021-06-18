@@ -25,7 +25,7 @@ GET http://{hostname}/books/{barcode}/price
 
 
 ### Examples
-# Request formats for adding or updating book information
+#### Request formats for adding or updating book information
 Regular book
 ```json
 {
@@ -61,7 +61,7 @@ Scientific journal
 }
 ```
 
-# Get books grouped by quantity
+#### Get books grouped by quantity
 <pre>
 GET <a href="https://rbooksapijava.azurewebsites.net/books" target="_blank">https://rbooksapijava.azurewebsites.net/books</a>
 </pre>
@@ -106,7 +106,7 @@ GET <a href="https://rbooksapijava.azurewebsites.net/books" target="_blank">http
     ]
 }
 ```
-# Get book by barcode
+#### Get book by barcode
 <pre>
 GET <a href="https://booksapijava.azurewebsites.net/books/3" target="_blank">https://booksapijava.azurewebsites.net/books/3</a>
 </pre>
@@ -121,7 +121,7 @@ GET <a href="https://booksapijava.azurewebsites.net/books/3" target="_blank">htt
 }
 ```
 
-# Get total price by barcode
+#### Get total price by barcode
 <pre>
 GET <a href="https://booksapijava.azurewebsites.net/books/3/price" target="_blank">https://booksapijava.azurewebsites.net/books/3/price</a>
 </pre>
