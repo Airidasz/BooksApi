@@ -1,6 +1,8 @@
 package com.airidasz.booksapi;
 
 import java.io.File;
+import java.io.InputStream;
+
 import javax.servlet.ServletContext;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -13,8 +15,7 @@ public class HomeResource {
 	
     @GET
     public Response index() {  
-    	String indexFileLocation = context.getRealPath("/") +"\\index.html";
-    	File indexFile = new File(indexFileLocation);
+    	InputStream indexFile = context.getResourceAsStream("index.html");
     	return Response.ok(indexFile).build();
     }
    
