@@ -8,10 +8,10 @@ public class BookDAO {
 	private static List<Book> books = new ArrayList<>();
 
     static {
-    	books.add(new AntiqueBook("Knyga4", "Airidas", "1", 8, 580.0, 14141));
-    	books.add(new AntiqueBook("Knyga2", "Airidas", "2", 4, 50.0, 1999));
-    	books.add(new AntiqueBook("Knyga4", "Airidas", "3", 2, 580.0, 1999));
-    	books.add(new ScientificJournal("Knyga4", "Airidas", "4", 4, 580.0, 1999));
+    	books.add(new Book("Book1", "Author1", "1", 8, 20.0));
+    	books.add(new AntiqueBook("Book2", "Author2", "2", 4, 50.0, 1500));
+    	books.add(new Book("Book3", "author3", "3", 2, 58.0));
+    	books.add(new ScientificJournal("Book4", "Author4", "4", 4, 580.0, 2));
     }
     
     private BookDAO() {
@@ -40,18 +40,7 @@ public class BookDAO {
     			.findAny().orElse(null);
     }
      
-    /*public boolean delete(int id) {
-        Product productToFind = new Product(id);
-        int index = data.indexOf(productToFind);
-        if (index >= 0) {
-            data.remove(index);
-            return true;
-        }
-         
-        return false;
-    }*/
-     
-    public void update(Book book) {
-    	get(book.getBarcode()).update(book);
+    public void update(String barcode, Book book) {
+    	get(barcode).update(book);
     }
 }
