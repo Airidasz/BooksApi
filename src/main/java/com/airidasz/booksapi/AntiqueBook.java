@@ -17,6 +17,10 @@ public class AntiqueBook extends Book {
 	public AntiqueBook(String name, String author, String barcode, Integer quantity, Double price, Integer releaseYear) {
 		super(name, author, barcode, quantity, price);
 		
+		if (releaseYear > 1900) {
+			throw new IllegalArgumentException("Release year cannot be greater that 1900");
+		} 
+
 		this.releaseYear = releaseYear;
 	}
 	
@@ -32,6 +36,10 @@ public class AntiqueBook extends Book {
 		return releaseYear;
 	}
 	public void setReleaseYear(Integer releaseYear) {
+		if (releaseYear > 1900) {
+			throw new IllegalArgumentException("Release year cannot be greater that 1900");
+		} 
+		
 		this.releaseYear = releaseYear;
 	}
 	

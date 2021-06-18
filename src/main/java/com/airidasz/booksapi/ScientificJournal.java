@@ -15,6 +15,10 @@ public class ScientificJournal extends Book {
 	
 	public ScientificJournal(String name, String author, String barcode, Integer quantity, Double price, Integer scienceIndex) {
 		super(name, author, barcode, quantity, price);
+		
+		if (scienceIndex < 1 || scienceIndex > 10) {
+			throw new IllegalArgumentException("Science index can only be between 1 and 10");
+		}
 		this.scienceIndex = scienceIndex;
 	}
 
@@ -23,6 +27,10 @@ public class ScientificJournal extends Book {
 	}
 
 	public void setScienceIndex(Integer scienceIndex) {
+		if (scienceIndex < 1 || scienceIndex > 10) {
+			throw new IllegalArgumentException("Science index can only be between 1 and 10");
+		} 
+
 		this.scienceIndex = scienceIndex;
 	}
 	
