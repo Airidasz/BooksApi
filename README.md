@@ -63,7 +63,7 @@ Scientific journal
 
 #### Get books grouped by quantity
 <pre>
-GET <a href="https://booksapijava.azurewebsites.net/books" target="_blank">https://booksapijava.azurewebsites.net/books</a>
+GET http://{hostname}/books
 </pre>
 
 ```json
@@ -108,7 +108,7 @@ GET <a href="https://booksapijava.azurewebsites.net/books" target="_blank">https
 ```
 #### Get book by barcode
 <pre>
-GET <a href="https://booksapijava.azurewebsites.net/books/3" target="_blank">https://booksapijava.azurewebsites.net/books/3</a>
+GET http://{hostname}/books/3
 </pre>
 
 ```json
@@ -123,7 +123,7 @@ GET <a href="https://booksapijava.azurewebsites.net/books/3" target="_blank">htt
 
 #### Get total price by barcode
 <pre>
-GET <a href="https://booksapijava.azurewebsites.net/books/3/price" target="_blank">https://booksapijava.azurewebsites.net/books/3/price</a>
+GET http://{hostname}/books/3/price
 </pre>
 
 ```json
